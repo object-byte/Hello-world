@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+/*首先确认好版心也就是整个页面的主要宽度
+用一个类定义一个宽度和margin
+*/
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+body {
+    background-color: #f3f5f7;
+}
+li {
+    list-style: none;
+}
+/*头部区域*/
+.header {
+    height: 42px;
+    margin: 30px auto;
+}
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+}
+.nav {
+    float: left;
+    margin-left: 60px;
+/*    同一个盒子里面的小盒子只要有一个盒子浮动其他的盒子也要浮动
+这是就会涉及到父盒子的高度问题
+*/
+
+}
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+.nav ul li a {
+    display: inline-block;
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    color: #050505;
+}
+.nav ul li a:hover {
+    border-bottom: 3px solid #0cc9ef;
+}
+/*搜索模块*/
+.header .searh {
+    width: 412px;
+    height: 42px;
+    float: left;
+    margin-left: 50px;
+}
+.searh input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #0cc9ef;
+    border-right: none;
+    color: #bfbfbf;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.searh button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-image: url("images/btn.png");
+    border: 0;
+}
+/*头像模块*/
+.header .user {
+    float: right;
+    line-height: 42px;
+    margin-right: 30px;
+}
+.header .user img {
+    vertical-align: middle;
+}
+/*头部区域结束*/
+/*banner开始*/
+.banner {
+    height: 421px;
+    background-color: #1c036c;
+}
+.banner .w {
+    height: 421px;
+    background-image: url("images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*左侧边栏*/
+.banner .banner_center .leftnav {
+    width: 190px;
+    height: 421px;
+    background:rgba(0,0,0,0.3);
+    float: left;
+}
+.banner .banner_center .leftnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+.banner .banner_center .leftnav ul .last {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+.banner .banner_center .leftnav ul li a {
+    font-size: 14px;
+    color: #ffffff;
+}
+.banner .banner_center .leftnav ul li a span {
+    float: right;
+}
+.banner .banner_center .leftnav ul li a:hover {
+    color: #0cc9ef;
+}
+/*这里是课程表的开始*/
+.right_nav {
+    width: 230px;
+    height: 300px;
+    float: right;
+    background-color: #f3f5f7;
+    margin-top: 50px;
+}
+.bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #cccccc;
+}
+h2 {
+    height: 48px;
+    background-color: #9bceea;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+}
+.right_nav .bd {
+    padding: 0 20px;
+}
+.bd ul li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+.bd .more {
+    display: inline-block;
+    width: 190px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #0cc9ef;
+    margin: 7px 13px 0 0;
+    text-align: center;
+}
+.bd .more:hover {
+    background-color: #0cc9ef;
+}
+/*右边导航栏结束*/
+/*精品推荐*/
+.goods {
+    height: 60px;
+    line-height: 60px;
+    margin: 10px auto;
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px 3px rgba(0,0,0,0.3);
+    width: 1200px;
+}
+.goods h3 {
+    float: left;
+    padding: 0 0 0 30px;
+    color: #22b0ff;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.goods ul li {
+    float: left;
+    margin: 0 15px;
+}
+.goods a {
+    float: right;
+    color: #050505
+}
+.goods a:hover {
+    color: red;
+}
+.goods #aa {
+    margin-right: 25px;
+    color: #22b0ff;
+    font-size: 12px;
+}
+/*精品推荐结束*/
+
+
+
+/*核心内容开始*/
+.box {
+    width: 1200px;
+    margin: 30px auto 0;
+}
+.box-hd {
+    height: 45px;
+}
+.box-hd h3 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+}
+.box-hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+.box-hd a:hover {
+    color: indianred;
+}
+.box ul li {
+    position: relative;
+    width: 228px;
+    height: 270px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+.box .box_body ul {
+    width: 1225px;
+}
+.box .box_body ul img {
+    width: 100%;
+}
+.box .box_body ul li .hot {
+    position: absolute;
+    top: 4px;
+    right: -3px;
+    width: 40px;
+    height: 20px;
+    border: 2px solid #ff592d;
+    color: #ff592d;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 700;
+    background-color: #f3f5f7;
+}
+.box .box_body ul li .body_title {
+    width: 185px;
+    margin: 20px auto;
+    font-size: 14px;
+    color: #050505;
+}
+.box .box_body ul li .box_info span {
+    color: #ff7c2d;
+}
+.box .box_body ul li .box_info {
+    margin: 0 20px;
+    font-size: 12px;
+    color: #999999;
+}
+.box .box_body ul li:hover {
+    box-shadow: 3px 3px 2px 2px #cccccc;
+}
+/*底部*/
+.foot {
+    height: 415px;
+    background-color: #ffffff;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+.clearfix {
+    *zoom:1;
+}
+.foot .foot_center {
+    width: 1200px;
+    height: 100%;
+    margin: 30px auto 0;
+    padding-top: 30px;
+}
+.foot .foot_center .foot_left {
+    float: left;
+    margin: 0 0 0 20px;
+}
+.foot .foot_center .foot_right {
+    float: right;
+}
+.foot .foot_center .foot_left  p {
+    font-size: 12px;
+    color:#666666;
+    margin: 20px 0 15px 0;
+}
+.foot .foot_center .foot_left a {
+    width: 120px;
+    height: 35px;
+    border: 1px solid #22b0ff;
+    text-align: center;
+    line-height: 35px;
+    color: #22b0ff;
+    display: block;
+}
+.foot .foot_center .foot_right dl {
+    float: right;
+    margin-left: 130px;
+}
+.foot .foot_center .foot_right dl dt {
+    font-size: 16px;
+    color: #333;
+    height: 30px;
+}
+.foot .foot_center .foot_right dl dd a {
+    font-size: 16px;
+    color: #333;
+}
+.foot .foot_center .foot_right dl dd {
+    margin-top: 5px;
+}
+.foot .foot_center .foot_right dl dd a:hover {
+    color: #0cc9ef;
+}
